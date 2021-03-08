@@ -11,6 +11,7 @@ computer_Choice = ''
 
 computer_Score = 0
 player_Score = 0
+age = int(input('Enter Your Age: '))
 
 print('Welcome to python Rock Paper Scissor OO || ><')
 print('Type help for more information')
@@ -33,13 +34,13 @@ for i in range(1, 15):
     #Player Choice
     player_Choice = input('> ')
 
-    if player_Choice == 'Rock':
+    if player_Choice == 'Rock' or player_Choice == 'rock':
         print('You choose Rock...OO==--')
 
-    elif player_Choice == 'Paper':
+    elif player_Choice == 'Paper' or player_Choice == 'paper':
         print('You choose Paper...||==--')
 
-    elif player_Choice == 'Scissor':
+    elif player_Choice == 'Scissor' or player_Choice == 'scissor':
         print('You choose Scissor...><==--')
 
     if player_Choice == 'help':
@@ -50,7 +51,7 @@ for i in range(1, 15):
         >quit to quit the game[y -- yes , n -- no]
         ''')
 
-    if player_Choice == 'quit':
+    if player_Choice == 'quit' or player_Choice == 'Quit':
         ans = input('Do you really want to quit [y / n]: ')
 
         if ans == 'y':
@@ -66,12 +67,12 @@ for i in range(1, 15):
         player_Score += 1
         print('Computer Score => ',computer_Score, name,'Score => ', player_Score)
 
-    if player_Choice == 'Rock' and computer_Choice == 'Paper':
+    if player_Choice == 'Rock' or player_Choice == 'rock' and computer_Choice == 'Paper':
         print('Computer Wins :(')
         computer_Score += 1
         print('Computer Score => ',computer_Score, name,'Score => ', player_Score)
 
-    elif player_Choice == 'Paper' and computer_Choice == 'Rock':
+    elif player_Choice == 'Paper' or player_Choice == 'paper' and computer_Choice == 'Rock':
         print(name,' Win :)')
         player_Score += 1
         print('Computer Score => ',computer_Score, name,'Score => ', player_Score)
