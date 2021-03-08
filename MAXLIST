@@ -1,0 +1,9 @@
+Swaping in python
+let's say we have two variables a and b
+and we want to swap them
+so 
+a = 5
+b = 6
+temp = a
+a = b
+b = temp

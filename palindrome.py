@@ -2,11 +2,10 @@
 
 #Palindrome => 'ABCBA' == 'ABCBA'
 
-str1 = input('Enter a string: ')
+str1 = input('Enter a word: ')
 str2 = str1[::-1]
-print(str2)
 if str1 == str2:
-    print('It is a palindrome.')
+    print('Its a palindrome')
 
 else:
-    print('It is not a palindrome.')
+    print('It is not a palindrome')
